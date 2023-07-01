@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+  </head>
+
+  <body style="display: flex; justify-content: center; align-items: center">
+    <div
+      style="
+        display: flex;
+        background-color: aquamarine;
+        border-radius: 0.5rem;
+        box-shadow: 0.05rem 0.05rem;
+        outline: none;
+      "
+    >
+      <div
+        id="search_wrapper"
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 10rem;
+          height: 2rem;
+          margin: 0.5rem;
+          border-radius: 0.5rem;
+        "
+      >
+        <input
+          id="search_input"
+          placeholder="请输入要搜索的书名和作者名"
+          style="
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+            border: 0;
+            box-shadow: 0.05rem 0.05rem;
+            text-overflow: ellipsis;
+          "
+          type="search"
+        />
+      </div>
+
+      <button
+        id="search_btn"
+        style="
+          margin: 0.5rem;
+          background-color: aqua;
+          border-radius: 0.5rem;
+          border: 0;
+          box-shadow: 0.05rem 0.05rem;
+        "
+      >
+        click
+      </button>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
