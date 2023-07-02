@@ -1,3 +1,6 @@
+#search_input:focus{
+    outline: none;
+}
 #search_list {
     border-radius: 0.5rem;
     background-color: rgb(54, 155, 122);
@@ -10,16 +13,24 @@
 }
 
 #search_item {
-    width: 10rem;
-    height: 2rem;
+    padding-left:.5rem;
     display: flex;
     justify-content: space-between;
 }
 
 .search_item_text {
-    width: 50%;
-    height: 100%;
     display: flex;
-    margin: .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    min-width: 5rem;
+    min-height: 2rem;
     text-overflow: ellipsis;
+    overflow: hidden;
+}
+#search_item:hover{
+    background:rgb(24, 95, 71);
+    transition: all .5s;
+    box-shadow: .2rem .2rem rgb(10, 52, 38),
+                -0.1rem -0.1rem rgb(10, 52, 38);
 }

@@ -1,4 +1,4 @@
-let search_value;
+
 const wrapper = document.getElementById("search_wrapper")
 const list = document.createElement("div")
 wrapper.appendChild(list)
@@ -6,17 +6,17 @@ list.id = "search_list"
 
 const searchInput = document.getElementById("search_input")
 searchInput.addEventListener("input",(e)=>{
+    const value = e.target.value.trim() 
     while (list.children.length != 0) {
         list.removeChild( list.children[list.children.length-1])
     }
-    if (e.target.value.trim() === '') {
+    if (value === '') {
          console.log("输入为空");
          
     }
     else{
-        console.log(e.target.value);
-        search_value = e.target.value
-        fetch(`http://localhost:8080/books?search=`+e.target.value)
+        console.log(value);
+        fetch(`http://localhost:8080/books?search=`+value)
         .then(res => res.json())
         .then(res => {
             createEle(res.length,res)
@@ -30,7 +30,9 @@ function createEle( length , resData ){
         const item = document.createElement("div")
         const bookName = document.createElement("div")
         const author = document.createElement("div")
+
         item.id = "search_item";
+
         bookName.className = "search_item_text";
         bookName.innerText = resData[i].bookName
     
