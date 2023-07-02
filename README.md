@@ -19,3 +19,5 @@
 2. 更改 `server/index.js` 里的 createConnnection 函数所需对象的属性 `user` `password` 为本地自己的用户名和密码
 3. 打开 `cmd`执行 `node ./server/index.js`，然后打开浏览器输入 `localhost:8080/` 
 4. OK，现在项目已经成功运行了！
+
+## 功能（feature）

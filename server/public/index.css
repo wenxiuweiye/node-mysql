@@ -1,16 +1,25 @@
-#search_item {
+#search_list {
     border-radius: 0.5rem;
-    position: absolute;
-    width: 10rem;
-    height: 2rem;
     background-color: rgb(54, 155, 122);
-    transform: translateY(100%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     color: white;
     margin-top: .1rem;
+    font-size: .5rem;
 }
 
-.search_item_text{
-    margin-left: .5rem;
+#search_item {
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_item_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin: .5rem;
+    text-overflow: ellipsis;
 }

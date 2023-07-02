@@ -40,7 +40,13 @@ CREATE TABLE `books` (
 
 LOCK TABLES `books` WRITE;
 /*!40000 ALTER TABLE `books` DISABLE KEYS */;
-INSERT INTO `books` VALUES (1,'围城','钱钟书','讽刺小说',191,21105,NULL),(2,'三体','刘慈欣','科幻小说',93,10051,NULL),(3,'杀死一只知更鸟','Nelle Harper Lee','悬疑推理',48,5051,NULL),(4,'白鹿原','陈忠实','乡土文学',45,10240,NULL),(5,'明朝那些事儿','当年明月','历史传记',336,35402,NULL),(6,'置身事内：中国政府与经济发展','兰小欢','政治',65,3142,NULL);
+INSERT INTO `books` VALUES  (1,'围城','钱钟书','讽刺小说',191,21105,NULL),
+                            (2,'三体','刘慈欣','科幻小说',93,10051,NULL),
+                            (3,'杀死一只知更鸟','Nelle Harper Lee','悬疑推理',48,5051,NULL),
+                            (4,'白鹿原','陈忠实','乡土文学',45,10240,NULL),
+                            (5,'明朝那些事儿','当年明月','历史传记',336,35402,NULL),
+                            (6,'置身事内：中国政府与经济发展','兰小欢','政治',65,3142,NULL),
+                            (7,'流浪地球','刘慈欣','科幻',41,6399,NULL);
 /*!40000 ALTER TABLE `books` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
