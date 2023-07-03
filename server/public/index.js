@@ -1,4 +1,4 @@
-
+// 获取 search_wrapper 
 const wrapper = document.getElementById("search_wrapper")
 const list = document.createElement("div")
 wrapper.appendChild(list)
@@ -17,7 +17,7 @@ searchInput.addEventListener("input",(e)=>{
     else{
         console.log(value);
         fetch(`http://localhost:8080/books?search=`+value)
-        .then(res => res.json())
+        .then(res => res.json() )
         .then(res => {
             createEle(res.length,res)
         })
@@ -27,6 +27,7 @@ searchInput.addEventListener("input",(e)=>{
 
 function createEle( length , resData ){
     for(let i=0; i < length;i++){
+        
         const item = document.createElement("div")
         const bookName = document.createElement("div")
         const author = document.createElement("div")
@@ -34,10 +35,10 @@ function createEle( length , resData ){
         item.id = "search_item";
 
         bookName.className = "search_item_text";
-        bookName.innerText = resData[i].bookName
+        bookName.innerText = resData[i].bookName //id
     
         author.className = "search_item_text";
-        author.innerText = resData[i].author
+        author.innerText = resData[i].author    //
         item.appendChild(bookName)
         item.appendChild(author)
         list.appendChild(item)
@@ -54,3 +55,5 @@ function createEle( length , resData ){
 //         }
 //     }
 // }
+
+
