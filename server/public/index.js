@@ -24,7 +24,11 @@ searchInput.addEventListener("input",(e)=>{
     }
     
 })
-
+/**
+ * 创建HTML元素
+ * @param {number} length 创建item元素所需数量 
+ * @param {array} resData 元素展示所需的值（Response Body）
+ */
 function createEle( length , resData ){
     for(let i=0; i < length;i++){
         
@@ -44,16 +48,3 @@ function createEle( length , resData ){
         list.appendChild(item)
     }
 }
-
-// function delay(fn,delayTime) {
-//     let lastTime = Date.now()
-
-//     return function(){
-//         let currentTime = Date.now()
-//         if (currentTime - lastTime >= delayTime) {
-//             fn()
-//         }
-//     }
-// }
-
-
