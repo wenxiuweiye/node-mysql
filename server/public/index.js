@@ -1,7 +1,7 @@
-// 获取 search_wrapper 
-const wrapper = document.getElementById("search_wrapper")
+// 获取 search_container 
+const container = document.getElementById("search_container")
 const list = document.createElement("div")
-wrapper.appendChild(list)
+container.appendChild(list)
 list.id = "search_list"
 
 const searchInput = document.getElementById("search_input")

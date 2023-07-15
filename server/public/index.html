@@ -1,25 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./title.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Search-Demo</title>
+    <meta name="description" content="A Simple JavaScript Project for Search">
+    <style>
+      *{
+        margin: 0 0;
+        padding: 0 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css">
-  <title>Document</title>
-</head>
-
-<body style="display: flex; justify-content: center; align-items: center">
-  <div id="search_component">
-    <div id="search_wrapper">
-      <input id="search_input" placeholder="请输入要搜索的书名和作者名" type="search" />
+  <body>
+    <!--title-->
+    <div class="title_wrapper">
+      <div class="title_container">
+        <div class="title_left">
+          <div>Search-Demo</div>
+          <p>A Simple JavaScript Project for Search By nodejs, express and mysql</p>
+        </div>
+        <div class="title_right">
+          <img src="./banner.png" alt="">
+        </div>
+      </div>
     </div>
-    <button id="search_btn">
-      SEARCH
-    </button>
-  </div>
 
-  <script src="./index.js" type="module"></script>
-</body>
+    <!-- search -->
+    <div id="search_wrapper">
+      <div id="search_container">
+        <input
+          id="search_input"
+          placeholder="请输入要搜索的书名和作者名"
+          type="search"
+        />
+      </div>
+      <button id="search_btn">SEARCH</button>
+    </div>
 
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>
